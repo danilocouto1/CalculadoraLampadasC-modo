@@ -7,16 +7,17 @@
         Console.WriteLine("Qual comodo deseja iluminar?");
         string comodo = Console.ReadLine();
         Console.WriteLine("Insira a largura do comodo: ");
-        int larguraComodo = int.Parse(Console.ReadLine());
+        decimal larguraComodo = decimal.Parse(Console.ReadLine());
         Console.WriteLine("Insira a comprimento do comodo: ");
-        int comprimentoComodo = int.Parse(Console.ReadLine());
+        decimal comprimentoComodo = decimal.Parse(Console.ReadLine());
         Console.WriteLine("Insira quantos watts de potencia tem as lampadas que usara: ");
         int wattsLampada = int.Parse(Console.ReadLine());
 
         //Processamento de dados
-        int metrosQuadrados = larguraComodo * comprimentoComodo;
-        int quocienteX = wattsLampada / 18;
-        int totalLampadas = metrosQuadrados / quocienteX;
+        decimal metrosQuadrados = larguraComodo * comprimentoComodo;
+        decimal quocienteX = wattsLampada / 18M;
+        decimal totalLampadas = metrosQuadrados / quocienteX;
+        totalLampadas = Math.Round(totalLampadas);
 
         //Saida de dados
         Console.WriteLine($"Para iluminar o comodo {comodo} usanda lampadas de {wattsLampada}watts é necessario o total de {totalLampadas} lampadas.");
