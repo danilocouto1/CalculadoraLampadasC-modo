@@ -13,6 +13,12 @@
         Console.WriteLine("Insira quantos watts de potencia tem as lampadas que usara: ");
         int wattsLampada = int.Parse(Console.ReadLine());
 
+        //Processamento de dados
+        int metrosQuadrados = larguraComodo * comprimentoComodo;
+        int quocienteX = wattsLampada / 18;
+        int totalLampadas = metrosQuadrados / quocienteX;
+
+        
 
     }
 }
