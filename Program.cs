@@ -18,7 +18,9 @@
         int quocienteX = wattsLampada / 18;
         int totalLampadas = metrosQuadrados / quocienteX;
 
-        
+        //Saida de dados
+        Console.WriteLine($"Para iluminar o comodo {comodo} usanda lampadas de {wattsLampada}watts é necessario o total de {totalLampadas} lampadas.");
+
 
     }
 }
